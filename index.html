@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mugdho's Recipes – Home</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <a href="index.html" class="navbar__logo">Mugdho's <span>Recipes</span></a>
+    <ul class="navbar__links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="recipe1.html">Butter Chicken</a></li>
+      <li><a href="recipe2.html">Carbonara</a></li>
+      <li><a href="recipe3.html">Lava Cake</a></li>
+      <li><a href="recipe4.html">Avocado Toast</a></li>
+      <li><a href="recipe5.html">Mango Lassi</a></li>
+    </ul>
+    <div class="navbar__toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <header class="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">A curated collection of authentic South Asian flavours</p>
+      <h1 class="hero__title">Cook. <em>Savour.</em><br>Share.</h1>
+      <p class="hero__subtitle">Discover recipes that bring people together — from comforting classics to bold new favourites.</p>
+      <a href="#featured" class="hero__cta">Explore Recipes</a>
+    </div>
+  </header>
+
+  <!-- ===== INTRO STRIP ===== -->
+  <div class="intro-strip">
+    <h2>Welcome to Mugdho's Recipe Collection</h2>
+    <p>Every recipe is crafted with love, tested in real kitchens, and designed for every skill level. Whether you're a beginner or a seasoned chef, there's always something new to discover. This collection showcases authentic South Asian cuisine for South Asian University.</p>
+  </div>
+
+  <!-- ===== STATS ===== -->
+  <div style="background: var(--warm-white);">
+    <div class="features">
+      <div class="feature-item">
+        <div class="feature-item__title">5+</div>
+        <div class="feature-item__label">Curated Recipes</div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-item__title">South Asian</div>
+        <div class="feature-item__label">Cuisine</div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-item__title">15 min</div>
+        <div class="feature-item__label">Quickest Recipe</div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-item__title">100%</div>
+        <div class="feature-item__label">Homemade & Fresh</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FEATURED RECIPES ===== -->
+  <section class="section" id="featured">
+    <div class="section__header">
+      <span class="section__label">Featured</span>
+      <h2 class="section__title">Our Best Recipes</h2>
+      <p class="section__desc">Hand-picked dishes loved by home cooks everywhere</p>
+    </div>
+
+    <!-- Search Bar (UI only) -->
+    <div class="search-bar-wrap">
+      <div class="search-bar">
+        <input type="text" placeholder="Search recipes (e.g. pasta, chicken, dessert)…" />
+        <button type="button">Search</button>
+      </div>
+    </div>
+
+    <!-- Category Filters -->
+    <div class="category-filters">
+      <button class="filter-btn active">All</button>
+      <button class="filter-btn">Vegetarian</button>
+      <button class="filter-btn">Non-Veg</button>
+      <button class="filter-btn">Desserts</button>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="recipes-grid">
+
+      <!-- Card 1 -->
+      <article class="recipe-card">
+        <div class="recipe-card__img-wrap">
+          <img src="images/recipe1.jpg" alt="Butter Chicken" loading="lazy" />
+          <span class="recipe-card__badge">Non-Veg</span>
+        </div>
+        <div class="recipe-card__body">
+          <div class="recipe-card__meta">
+            <span>45 min</span>
+            <span>Medium</span>
+            <span>4 servings</span>
+          </div>
+          <h3 class="recipe-card__title">Butter Chicken</h3>
+          <p class="recipe-card__desc">A rich, creamy tomato-based curry with tender marinated chicken — India's most beloved comfort dish.</p>
+          <a href="recipe1.html" class="recipe-card__link">View Recipe →</a>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="recipe-card">
+        <div class="recipe-card__img-wrap">
+          <img src="images/recipe2.jpg" alt="Crispy Samosa" loading="lazy" />
+          <span class="recipe-card__badge recipe-card__badge--veg">Vegetarian</span>
+        </div>
+        <div class="recipe-card__body">
+          <div class="recipe-card__meta">
+            <span>40 min</span>
+            <span>Medium</span>
+            <span>8-10 servings</span>
+          </div>
+          <h3 class="recipe-card__title">Crispy Samosa</h3>
+          <p class="recipe-card__desc">Golden-fried pastry pockets filled with spiced potatoes and peas. Perfect appetizer for any occasion or tea time snack.</p>
+          <a href="recipe2.html" class="recipe-card__link">View Recipe →</a>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="recipe-card">
+        <div class="recipe-card__img-wrap">
+          <img src="images/recipe3.jpg" alt="Paneer Tikka" loading="lazy" />
+          <span class="recipe-card__badge recipe-card__badge--veg">Vegetarian</span>
+        </div>
+        <div class="recipe-card__body">
+          <div class="recipe-card__meta">
+            <span>35 min</span>
+            <span>Easy</span>
+            <span>4 servings</span>
+          </div>
+          <h3 class="recipe-card__title">Paneer Tikka</h3>
+          <p class="recipe-card__desc">Chunks of cottage cheese marinated in yogurt and spices, then grilled to perfection. A popular appetizer that's protein-rich and delicious.</p>
+          <a href="recipe3.html" class="recipe-card__link">View Recipe →</a>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="recipe-card">
+        <div class="recipe-card__img-wrap">
+          <img src="images/recipe4.jpg" alt="Rice Kheer" loading="lazy" />
+          <span class="recipe-card__badge recipe-card__badge--dessert">Dessert</span>
+        </div>
+        <div class="recipe-card__body">
+          <div class="recipe-card__meta">
+            <span>45 min</span>
+            <span>Easy</span>
+            <span>6 servings</span>
+          </div>
+          <h3 class="recipe-card__title">Rice Kheer</h3>
+          <p class="recipe-card__desc">A creamy rice pudding made with basmati rice, milk, and garnished with nuts. The ultimate comfort dessert perfect for celebrations.</p>
+          <a href="recipe4.html" class="recipe-card__link">View Recipe →</a>
+        </div>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="recipe-card">
+        <div class="recipe-card__img-wrap">
+          <img src="images/recipe5.jpg" alt="Aloo Chaat" loading="lazy" />
+          <span class="recipe-card__badge recipe-card__badge--veg">Vegetarian</span>
+        </div>
+        <div class="recipe-card__body">
+          <div class="recipe-card__meta">
+            <span>20 min</span>
+            <span>Easy</span>
+            <span>4 servings</span>
+          </div>
+          <h3 class="recipe-card__title">Aloo Chaat</h3>
+          <p class="recipe-card__desc">A popular street food featuring boiled potatoes with tangy spices, fresh herbs, and crispy elements. A refreshing snack that's quick and easy.</p>
+          <a href="recipe5.html" class="recipe-card__link">View Recipe →</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <h3>Mugdho's Recipe Collection</h3>
+        <p>A passion project celebrating authentic South Asian cuisine. Created for South Asian University's Web Development Assignment.</p>
+      </div>
+      <div class="footer__links">
+        <h4>Recipes</h4>
+        <ul>
+          <li><a href="recipe1.html">Butter Chicken</a></li>
+          <li><a href="recipe2.html">Crispy Samosa</a></li>
+          <li><a href="recipe3.html">Paneer Tikka</a></li>
+          <li><a href="recipe4.html">Rice Kheer</a></li>
+          <li><a href="recipe5.html">Aloo Chaat</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="#">Vegetarian</a></li>
+          <li><a href="#">Non-Veg</a></li>
+          <li><a href="#">Desserts</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Mugdho's Recipe Collection. All rights reserved.</span>
+      <span>Created by <strong style="color: var(--peach);">Mugdho Mistry</strong> for South Asian University</span>
+    </div>
+  </footer>
+
+  <!-- Mobile nav toggle (CSS-driven via checkbox trick + inline style swap) -->
+  <style>
+    #navToggle { cursor: pointer; }
+  </style>
+  <script>
+    // NOTE: Only used for toggling nav class — no logic, no data manipulation
+    document.getElementById('navToggle').addEventListener('click', function () {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
