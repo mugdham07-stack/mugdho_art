@@ -1,6 +1,6 @@
 NAME: Mugdha Mistry
 UNIVERSITY: South Asian University
-Git repo link:
+Git repo link: https://github.com/mugdham07-stack/mugdho_art.git
 Git live url:
 
 
